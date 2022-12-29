@@ -1,0 +1,31 @@
+{
+  "name": "mailmicroservice",
+  "version": "1.0.0",
+  "description": "Microservicio para envio de email",
+  "main": "./config/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node ./dist/config/server.js",
+    "dist": "tsc -p .",
+    "dev": "nodemon ./src/config/server.ts",
+    "type": "module"
+  },
+  "keywords": [
+    "email"
+  ],
+  "author": "ceordonezj/CIDEJ",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.7"
+  }
+}
